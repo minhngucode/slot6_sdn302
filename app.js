@@ -1,0 +1,16 @@
+const express = require('express');
+const bodyParser = require('body-parser');
+const connectDB = require('./config/db');
+const bookingRoutes = require('./routes/bookingRoutes');
+require('dotenv').config();
+
+const app = express();
+app.use(bodyParser.json());
+
+connectDB();
+
+app.use('/api', bookingRoutes);
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+    console.log(`Server is running on http://localhost:${port}`);
+});

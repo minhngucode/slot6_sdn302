@@ -1,0 +1,32 @@
+{
+    "users": [
+        {
+            "id": "user1",
+            "name": "Minh",
+            "role": "customer"
+        },
+        {
+            "id": "user2",
+            "name": "Ngan",
+            "role": "customer"
+        },
+        {
+            "id": "admin1",
+            "name": "Admin",
+            "role": "admin"
+        }
+    ],
+    "rooms": [
+        {
+            "id": "room1",
+            "type": "Single",
+            "status": "available"
+        },
+        {
+            "id": "room2",
+            "type": "Double",
+            "status": "available"
+        }
+    ],
+    "bookings": []
+}
